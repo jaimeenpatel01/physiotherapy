@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PHONE_LINK, WHATSAPP_LINK } from "@/lib/constants";
 
 export default function Hero() {
@@ -96,24 +97,20 @@ export default function Hero() {
           <div className="hidden lg:flex items-center justify-center">
             <div className="relative">
               {/* Main card */}
-              <div className="w-80 h-96 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-8 flex flex-col items-center justify-center text-center space-y-6">
-                <div className="w-24 h-24 rounded-full bg-white/20 flex items-center justify-center text-5xl">
-                  🏥
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-2">Dr. Ketu Patel</h3>
-                  <p className="text-white/70 text-sm">BPT — Physiotherapist</p>
-                  <p className="text-white/50 text-xs mt-1">Gandhinagar, Gujarat</p>
-                </div>
-                <div className="flex flex-wrap gap-2 justify-center">
-                  {["Manual Therapy", "Pain Relief", "Strength"].map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 rounded-full bg-white/10 text-white/80 text-xs font-medium"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+              <div className="w-80 h-96 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-2 flex flex-col items-center justify-center text-center space-y-4 overflow-hidden group">
+                <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                  <Image
+                    src="/ketu-image.jpg"
+                    alt="Dr. Ketu Patel - Physiotherapist"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    priority
+                  />
+                  {/* Overlay for text readability if needed */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-left">
+                    <h3 className="text-xl font-bold text-white">Dr. Ketu Patel</h3>
+                    <p className="text-white/80 text-sm">BPT — Physiotherapist</p>
+                  </div>
                 </div>
               </div>
               {/* Floating badges */}

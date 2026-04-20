@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import CTASection from "@/components/CTASection";
 import { SITE_CONFIG, PHONE_LINK, WHATSAPP_LINK } from "@/lib/constants";
@@ -37,11 +38,16 @@ export default function AboutPage() {
             {/* Profile Card */}
             <div className="flex justify-center">
               <div className="relative">
-                <div className="w-72 md:w-80 h-96 rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border p-8 flex flex-col items-center justify-center text-center space-y-6">
-                  <div className="w-28 h-28 rounded-full bg-hero-gradient flex items-center justify-center text-white text-4xl font-bold shadow-2xl shadow-primary/20">
-                    KP
+                <div className="w-72 md:w-80 h-[450px] rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border p-3 flex flex-col items-center space-y-6 overflow-hidden">
+                  <div className="relative w-full h-72 rounded-2xl overflow-hidden shadow-2xl shadow-primary/10">
+                    <Image
+                      src="/ketu-image.jpg"
+                      alt={SITE_CONFIG.owner}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                  <div>
+                  <div className="text-center px-4">
                     <h2 className="text-2xl font-extrabold text-foreground">
                       {SITE_CONFIG.owner}
                     </h2>
@@ -52,7 +58,7 @@ export default function AboutPage() {
                       {SITE_CONFIG.experience}
                     </p>
                   </div>
-                  <div className="flex flex-wrap gap-2 justify-center">
+                  <div className="flex flex-wrap gap-2 justify-center px-4">
                     {SITE_CONFIG.languages.map((lang) => (
                       <span
                         key={lang}
@@ -64,10 +70,10 @@ export default function AboutPage() {
                   </div>
                 </div>
                 {/* Floating badges */}
-                <div className="absolute -top-3 -right-3 px-4 py-2 rounded-xl bg-secondary text-white text-sm font-semibold shadow-xl animate-float">
+                <div className="absolute -top-7 -right-5 px-4 py-2 rounded-xl bg-secondary text-white text-sm font-semibold shadow-xl animate-float">
                   🏠 Home Visits
                 </div>
-                <div className="absolute -bottom-3 -left-3 px-4 py-2 rounded-xl bg-white border border-border text-foreground text-sm font-semibold shadow-xl animate-float" style={{ animationDelay: "2s" }}>
+                <div className="absolute -bottom-9 -left-5 px-4 py-2 rounded-xl bg-white border border-border text-foreground text-sm font-semibold shadow-xl animate-float" style={{ animationDelay: "2s" }}>
                   ✅ BPT Certified
                 </div>
               </div>
