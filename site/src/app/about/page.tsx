@@ -87,7 +87,7 @@ export default function AboutPage() {
                   Dr. Ketu Patel is a BPT-certified physiotherapist dedicated to providing
                   professional, personalized physiotherapy services at your doorstep in
                   Gandhinagar and surrounding areas. With expertise in manual therapy, pain
-                  relief, and strength training, Dr. Patel brings the clinic experience to
+                  relief, and strength training, Dr. Ketu Patel brings the clinic experience to
                   the comfort of your home.
                 </p>
               </div>
@@ -96,7 +96,7 @@ export default function AboutPage() {
                 <p className="text-muted leading-relaxed">
                   Understanding that many patients face challenges traveling to clinics —
                   whether due to post-surgery limitations, chronic pain, or elderly care needs
-                  — Dr. Patel offers comprehensive home visit physiotherapy with over 14
+                  — Dr. Ketu Patel offers comprehensive home visit physiotherapy with over 14
                   advanced techniques including dry needling, IASTM, cupping therapy, and more.
                 </p>
                 <p className="text-muted leading-relaxed">

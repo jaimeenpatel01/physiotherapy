@@ -275,7 +275,7 @@ export const TESTIMONIALS = [
   {
     name: "Meena Ben Patel",
     location: "Adalaj",
-    text: "My mother had a stroke and needed daily physio. Dr. Patel's home visits saved us so much trouble. His exercises and care helped her regain movement in just a few weeks.",
+    text: "My mother had a stroke and needed daily physio. Dr. Ketu Patel's home visits saved us so much trouble. His exercises and care helped her regain movement in just a few weeks.",
     rating: 5,
   },
   {
@@ -287,7 +287,7 @@ export const TESTIMONIALS = [
   {
     name: "Priya Shah",
     location: "Sargasan",
-    text: "As a working professional, visiting a clinic was impossible. Dr. Patel's home visits fit perfectly into my schedule. Professional, punctual, and extremely effective treatment.",
+    text: "As a working professional, visiting a clinic was impossible. Dr. Ketu Patel's home visits fit perfectly into my schedule. Professional, punctual, and extremely effective treatment.",
     rating: 5,
   },
 ] as const;

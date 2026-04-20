@@ -74,7 +74,7 @@ export default function TechniquesPage() {
               {
                 step: "02",
                 title: "Assessment",
-                desc: "Dr. Patel visits your home for a thorough physical assessment.",
+                desc: "Dr. Ketu Patel visits your home for a thorough physical assessment.",
                 icon: "🔍",
               },
               {
