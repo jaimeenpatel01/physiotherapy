@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import CTASection from "@/components/CTASection";
 import { SERVICES, PHONE_LINK, WHATSAPP_LINK } from "@/lib/constants";
@@ -46,9 +47,6 @@ export default function ServicesPage() {
                 }`}
               >
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-3xl mb-5">
-                    {service.icon}
-                  </div>
                   <h2 className="text-2xl md:text-3xl font-extrabold text-foreground mb-3">
                     {service.title}
                   </h2>
@@ -76,6 +74,16 @@ export default function ServicesPage() {
                   </div>
                 </div>
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
+                  {service.image && (
+                    <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow-lg border border-border/50">
+                      <Image
+                        src={service.image}
+                        alt={service.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
                   <div className="p-6 md:p-8 rounded-2xl bg-surface border border-border">
                     <h3 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">
                       What We Treat

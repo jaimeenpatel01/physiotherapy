@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface ServiceCardProps {
   title: string;
   description: string;
-  icon: string;
+  image?: string;
   details?: readonly string[];
   href?: string;
 }
@@ -11,24 +12,31 @@ interface ServiceCardProps {
 export default function ServiceCard({
   title,
   description,
-  icon,
+  image,
   details,
   href = "/services",
 }: ServiceCardProps) {
   return (
     <Link
       href={href}
-      className="group block p-6 md:p-8 rounded-2xl bg-white border border-border hover:border-primary/20 card-hover shadow-sm hover:shadow-xl"
+      className="group block p-6 md:p-8 rounded-2xl bg-white border border-border hover:border-primary/20 card-hover shadow-sm hover:shadow-xl text-center overflow-hidden flex flex-col h-full"
     >
-      <div className="w-14 h-14 rounded-2xl bg-surface flex items-center justify-center text-2xl mb-5 group-hover:bg-primary/10 transition-colors">
-        {icon}
-      </div>
+      {image && (
+        <div className="relative w-full h-40 mb-5 rounded-xl overflow-hidden shrink-0">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+      )}
       <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
         {title}
       </h3>
-      <p className="text-muted text-sm leading-relaxed mb-4">{description}</p>
+      <p className="text-muted text-sm leading-relaxed mb-4 flex-grow">{description}</p>
       {details && details.length > 0 && (
-        <ul className="space-y-1.5">
+        <ul className="space-y-1.5 inline-block text-left">
           {details.slice(0, 4).map((detail) => (
             <li key={detail} className="flex items-center gap-2 text-xs text-muted">
               <svg className="w-3.5 h-3.5 text-secondary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>

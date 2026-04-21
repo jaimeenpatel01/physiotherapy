@@ -34,7 +34,7 @@ export const SERVICES = [
     title: "Orthopedic Conditions",
     description:
       "Expert treatment for joint pain, fractures, arthritis, frozen shoulder, back pain, and all musculoskeletal disorders.",
-    icon: "🦴",
+    image: "/services/orthopedic-conditions.jpg",
     details: [
       "Joint pain & stiffness",
       "Fracture rehabilitation",
@@ -49,7 +49,7 @@ export const SERVICES = [
     title: "Neurological Conditions",
     description:
       "Specialized care for stroke recovery, paralysis, Parkinson's disease, and nerve-related conditions in your home.",
-    icon: "🧠",
+    image: "/services/neurological-conditions.jpg",
     details: [
       "Stroke rehabilitation",
       "Paralysis recovery",
@@ -64,7 +64,7 @@ export const SERVICES = [
     title: "Cardiopulmonary Conditions",
     description:
       "Breathing exercises, cardiac rehabilitation, and lung capacity improvement through guided physiotherapy.",
-    icon: "❤️",
+    image: "/services/cardiopulmonary-conditions.jpg",
     details: [
       "Cardiac rehabilitation",
       "Breathing exercises",
@@ -79,7 +79,7 @@ export const SERVICES = [
     title: "Sports Rehabilitation",
     description:
       "Get back in the game with targeted sports injury treatment and performance-focused rehabilitation.",
-    icon: "⚽",
+    image: "/services/sports-rehabilitation.jpg",
     details: [
       "Sports injury recovery",
       "Ligament injury rehab",
@@ -94,7 +94,7 @@ export const SERVICES = [
     title: "Pre/Post Operative Rehab",
     description:
       "Comprehensive rehabilitation before and after surgery to ensure faster recovery and better outcomes.",
-    icon: "🏥",
+    image: "/services/pre-post-operative-rehab.jpg",
     details: [
       "Pre-surgery strengthening",
       "Post-surgery mobilization",
@@ -109,7 +109,7 @@ export const SERVICES = [
     title: "Fitness & Health",
     description:
       "Personalized fitness programs designed for your health goals, age, and physical condition.",
-    icon: "💪",
+    image: "/services/fitness-health.jpg",
     details: [
       "Personalized exercise plans",
       "Weight management",
@@ -124,7 +124,7 @@ export const SERVICES = [
     title: "Pre/Post Pregnancy Exercises",
     description:
       "Safe, guided exercises for expecting and new mothers to maintain health and aid recovery.",
-    icon: "🤰",
+    image: "/services/pre-post-pregnancy-exercises.jpg",
     details: [
       "Prenatal exercises",
       "Postnatal recovery",
@@ -139,7 +139,7 @@ export const SERVICES = [
     title: "Home Exercise Program",
     description:
       "Customized exercise programs designed specifically for you, taught and monitored at your home.",
-    icon: "🏠",
+    image: "/services/home-exercise-program.jpg",
     details: [
       "Customized routines",
       "Video demonstrations",
@@ -157,98 +157,98 @@ export const TECHNIQUES = [
     title: "Manual Therapy",
     description:
       "Hands-on techniques to mobilize joints and soft tissues, reducing pain and improving movement.",
-    icon: "🤲",
+    image: "/techniques/manual-therapy.jpg",
   },
   {
     id: "dry-needling",
     title: "Dry Needling",
     description:
       "Precise needle insertion into trigger points to release muscle tension and alleviate chronic pain.",
-    icon: "📌",
+    image: "/techniques/dry-needling.jpg",
   },
   {
     id: "tens",
     title: "TENS",
     description:
       "Transcutaneous Electrical Nerve Stimulation for effective, drug-free pain management.",
-    icon: "⚡",
+    image: "/techniques/tens.jpg",
   },
   {
     id: "ift",
     title: "IFT",
     description:
       "Interferential Therapy using medium-frequency electrical currents for deep tissue pain relief.",
-    icon: "🔌",
+    image: "/techniques/ift.jpg",
   },
   {
     id: "ultrasound",
     title: "Ultrasound Therapy",
     description:
       "Therapeutic ultrasound waves to promote tissue healing and reduce inflammation.",
-    icon: "📡",
+    image: "/techniques/ultrasound.jpg",
   },
   {
     id: "exercise-therapy",
     title: "Exercise Therapy",
     description:
       "Prescribed therapeutic exercises tailored to your condition for strength and recovery.",
-    icon: "🏋️",
+    image: "/techniques/exercise-therapy.jpg",
   },
   {
     id: "taping",
     title: "Taping",
     description:
       "Kinesiology and sports taping to support joints, reduce swelling, and aid recovery.",
-    icon: "🩹",
+    image: "/techniques/taping.jpg",
   },
   {
     id: "myofascial-release",
     title: "Myofascial Release",
     description:
       "Gentle sustained pressure on soft tissue to eliminate pain and restore motion.",
-    icon: "🔄",
+    image: "/techniques/myofascial-release.jpg",
   },
   {
     id: "posture-correction",
     title: "Posture Correction",
     description:
       "Assessment and correction of postural imbalances to prevent pain and improve alignment.",
-    icon: "🧍",
+    image: "/techniques/posture-correction.jpg",
   },
   {
     id: "cupping",
     title: "Cupping Therapy",
     description:
       "Traditional cupping technique to improve blood flow, reduce muscle tension, and promote healing.",
-    icon: "🫙",
+    image: "/techniques/cupping.jpg",
   },
   {
     id: "electro-needling",
     title: "Electro Needling Therapy",
     description:
       "Combination of dry needling with electrical stimulation for enhanced pain relief and recovery.",
-    icon: "💉",
+    image: "/techniques/electro-needling.jpg",
   },
   {
     id: "iastm",
     title: "IASTM",
     description:
       "Instrument Assisted Soft Tissue Mobilization to break down scar tissue and fascial restrictions.",
-    icon: "🔧",
+    image: "/techniques/iastm.jpg",
   },
   {
     id: "chiropractic",
     title: "Chiropractic & Osteopathy",
     description:
       "Spinal adjustments and osteopathic techniques for alignment, pain relief, and overall wellness.",
-    icon: "🦴",
+    image: "/techniques/chiropractic.jpg",
   },
   {
     id: "myokinetic",
     title: "Myokinetic Release",
     description:
       "Advanced technique combining movement and manual therapy for deep muscular release.",
-    icon: "🌊",
+    image: "/techniques/myokinetic.jpg",
   },
 ] as const;
 

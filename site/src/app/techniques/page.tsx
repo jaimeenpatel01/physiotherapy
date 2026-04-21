@@ -48,7 +48,7 @@ export default function TechniquesPage() {
                 key={technique.id}
                 title={technique.title}
                 description={technique.description}
-                icon={technique.icon}
+                image={"image" in technique ? technique.image : undefined}
               />
             ))}
           </div>

@@ -22,7 +22,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-20">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-6 md:py-20">
         <div className="grid lg:grid-cols-2 gap-6 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left space-y-3 md:space-y-8"> 
@@ -45,6 +45,30 @@ export default function Hero() {
               at Your{" "}
               <span className="text-secondary-light">Doorstep</span>
             </h1>
+
+            {/* Mobile Photo - visible only on mobile */}
+            <div className="lg:hidden flex justify-center py-4">
+              <div className="relative">
+                <div className="w-64 h-72 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-2 overflow-hidden shadow-2xl">
+                  <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                    <Image
+                      src="/ketu-image.jpg"
+                      alt="Dr. Ketu Patel - Physiotherapist"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                </div>
+                {/* Simplified floating badges for mobile */}
+                <div className="absolute -top-3 -right-3 px-3 py-1.5 rounded-xl bg-white shadow-xl text-[11px] font-bold text-primary animate-float">
+                  ✅ Qualified BPT
+                </div>
+                <div className="absolute -bottom-3 -left-3 px-3 py-1.5 rounded-xl bg-secondary text-white shadow-xl text-[11px] font-bold animate-float" style={{ animationDelay: "2s" }}>
+                  🏠 Home Visits
+                </div>
+              </div>
+            </div>
 
             {/* Subheadline */}
             <p className="text-base md:text-xl text-white/80 max-w-xl mx-auto lg:mx-0 leading-relaxed px-4 sm:px-0">

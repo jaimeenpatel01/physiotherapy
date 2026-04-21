@@ -92,6 +92,9 @@ export default function AboutPage() {
                   Professional Physiotherapy{" "}
                   <span className="text-gradient">at Your Home</span>
                 </h2>
+                <p className="text-primary font-bold text-lg mb-4 italic">
+                  તમારા ઘરઆંગણે નિષ્ણાત ફિઝિયોથેરાપી સારવાર (Expert physiotherapy treatment at your doorstep)
+                </p>
                 <p className="text-muted leading-relaxed">
                   Dr. Ketu Patel is a BPT-certified physiotherapist dedicated to providing
                   professional, personalized physiotherapy services at your doorstep in
