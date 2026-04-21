@@ -26,6 +26,11 @@ export default function HomePage() {
       {/* Trust Badges */}
       <section className="py-6 md:py-16 bg-white" id="trust-badges">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-foreground">
+              વિશ્વાસ અને સંતોષ <span className="text-primary">— Trust & Quality</span>
+            </h2>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-6">
             {[
               {
@@ -211,6 +216,7 @@ export default function HomePage() {
                 key={testimonial.name}
                 name={testimonial.name}
                 location={testimonial.location}
+                gujaratiLocation={testimonial.gujaratiLocation}
                 text={testimonial.text}
                 rating={testimonial.rating}
               />
@@ -231,13 +237,16 @@ export default function HomePage() {
             {AREAS.map((area) => (
               <div
                 key={area.name}
-                className={`px-4 py-3 rounded-xl border text-center text-sm font-medium transition-all ${
+                className={`flex flex-col items-center justify-center px-4 py-3 rounded-xl border text-center text-sm font-medium transition-all ${
                   area.primary
                     ? "bg-primary text-white border-primary shadow-lg shadow-primary/20"
                     : "bg-white border-border/50 text-foreground shadow-sm hover:border-primary/20 hover:text-primary"
                 }`}
               >
-                {area.name}
+                <span>{area.name}</span>
+                <span className={area.primary ? "text-white/80 text-xs mt-1" : "text-primary/70 text-xs mt-1"}>
+                  {area.gujaratiName}
+                </span>
               </div>
             ))}
           </div>

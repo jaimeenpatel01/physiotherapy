@@ -26,6 +26,13 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-6 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left space-y-3 md:space-y-8"> 
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs font-medium animate-fade-in">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+              </span>
+              નમસ્તે! — Serving Gandhinagar
+            </div>
 
             {/* Headline */}
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.2] tracking-tight">
@@ -41,7 +48,8 @@ export default function Hero() {
 
             {/* Subheadline */}
             <p className="text-base md:text-xl text-white/80 max-w-xl mx-auto lg:mx-0 leading-relaxed px-4 sm:px-0">
-              Professional Home Physiotherapy Visits in Gandhinagar.
+              Professional Home Physiotherapy Visits in Gandhinagar.<br />
+              <span className="text-secondary-light font-medium italic">ઘરે બેઠા ફિઝિયોથેરાપી સારવાર — Physiotherapy at Home</span>.
               Personalized care by Dr. Ketu Patel — recover faster, at home.
             </p>
 

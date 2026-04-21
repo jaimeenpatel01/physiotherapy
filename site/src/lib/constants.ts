@@ -11,6 +11,7 @@ export const SITE_CONFIG = {
     "Hello Dr. Ketu Patel, I would like to book a home physiotherapy visit."
   ),
   location: "Gandhinagar, Gujarat, India",
+  gujaratiLocation: "ગાંધીનગર, ગુજરાત, ભારત",
   languages: ["Gujarati", "Hindi", "English"],
   specializations: ["Manual Therapy", "Pain Relief", "Strength Training"],
 };
@@ -252,41 +253,45 @@ export const TECHNIQUES = [
 ] as const;
 
 export const AREAS = [
-  { name: "Gandhinagar (All Sectors)", primary: true },
-  { name: "Pethapur", primary: false },
-  { name: "Randheja", primary: false },
-  { name: "Raysan", primary: false },
-  { name: "Randesan", primary: false },
-  { name: "Adalaj", primary: false },
-  { name: "Vavol", primary: false },
-  { name: "Uvarsad", primary: false },
-  { name: "Tintoda", primary: false },
-  { name: "Kudasan", primary: false },
-  { name: "Sargasan", primary: false },
+  { name: "Gandhinagar — All Sectors", gujaratiName: "ગાંધીનગર — બધા સેક્ટરો", primary: true },
+  { name: "Pethapur", gujaratiName: "પેથાપુર", primary: false },
+  { name: "Randheja", gujaratiName: "રાંધેજા", primary: false },
+  { name: "Raysan", gujaratiName: "રાયસણ", primary: false },
+  { name: "Randesan", gujaratiName: "રાંદેસણ", primary: false },
+  { name: "Adalaj", gujaratiName: "અડાલજ", primary: false },
+  { name: "Vavol", gujaratiName: "વાવોલ", primary: false },
+  { name: "Uvarsad", gujaratiName: "ઉવારસદ", primary: false },
+  { name: "Tintoda", gujaratiName: "ટીંટોડા", primary: false },
+  { name: "Kudasan", gujaratiName: "કુડાસણ", primary: false },
+  { name: "Sargasan", gujaratiName: "સરગાસણ", primary: false },
 ] as const;
 
 export const TESTIMONIALS = [
   {
     name: "Rajesh Sharma",
     location: "Sector 21, Gandhinagar",
+    gujaratiLocation: "સેક્ટર ૨૧, ગાંધીનગર",
     text: "Dr. Ketu Patel's home physiotherapy service was a blessing. After my knee surgery, I couldn't travel to a clinic. The personalized treatment plan helped me recover much faster than expected.",
     rating: 5,
   },
   {
     name: "Meena Ben Patel",
     location: "Adalaj",
+    gujaratiLocation: "અડાલજ",
     text: "My mother had a stroke and needed daily physio. Dr. Ketu Patel's home visits saved us so much trouble. His exercises and care helped her regain movement in just a few weeks.",
     rating: 5,
   },
   {
     name: "Amit Desai",
     location: "Kudasan",
+    gujaratiLocation: "કુડાસણ",
     text: "I was suffering from chronic back pain for months. Dr. Ketu's combination of manual therapy and exercise program gave me relief I hadn't found anywhere else. Highly recommended!",
     rating: 5,
   },
   {
     name: "Priya Shah",
     location: "Sargasan",
+    gujaratiLocation: "સરગાસણ",
     text: "As a working professional, visiting a clinic was impossible. Dr. Ketu Patel's home visits fit perfectly into my schedule. Professional, punctual, and extremely effective treatment.",
     rating: 5,
   },

@@ -1,11 +1,12 @@
 interface TestimonialCardProps {
   name: string;
   location: string;
+  gujaratiLocation?: string;
   text: string;
   rating: number;
 }
 
-export default function TestimonialCard({ name, location, text, rating }: TestimonialCardProps) {
+export default function TestimonialCard({ name, location, gujaratiLocation, text, rating }: TestimonialCardProps) {
   return (
     <div className="p-6 md:p-8 rounded-2xl bg-white border border-border shadow-sm hover:shadow-lg transition-all duration-300">
       {/* Stars */}
@@ -29,7 +30,9 @@ export default function TestimonialCard({ name, location, text, rating }: Testim
         </div>
         <div>
           <p className="font-semibold text-foreground text-sm">{name}</p>
-          <p className="text-muted text-xs">{location}</p>
+          <p className="text-muted text-xs">
+            {location} {gujaratiLocation && <span className="text-primary/70 ml-1">({gujaratiLocation})</span>}
+          </p>
         </div>
       </div>
     </div>

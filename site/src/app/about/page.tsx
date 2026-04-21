@@ -23,9 +23,12 @@ export default function AboutPage() {
             About Us
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
-            Meet Your <span className="text-secondary-light">Physiotherapist</span>
+            નમસ્તે, Meet Your <span className="text-secondary-light">Physiotherapist</span>
           </h1>
-          <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto italic font-medium">
+            "સ્વસ્થ રહો, મસ્ત રહો" — Stay Healthy, Stay Happy
+          </p>
+          <p className="mt-2 text-lg text-white/80 max-w-2xl mx-auto">
             Dedicated to bringing professional physiotherapy care to your doorstep.
           </p>
         </div>
@@ -92,9 +95,9 @@ export default function AboutPage() {
                 <p className="text-muted leading-relaxed">
                   Dr. Ketu Patel is a BPT-certified physiotherapist dedicated to providing
                   professional, personalized physiotherapy services at your doorstep in
-                  Gandhinagar and surrounding areas. With expertise in manual therapy, pain
-                  relief, and strength training, Dr. Ketu Patel brings the clinic experience to
-                  the comfort of your home.
+                  <span className="text-primary font-medium"> આપણું ગાંધીનગર (Our Gandhinagar)</span> and surrounding areas. 
+                  With expertise in manual therapy, pain relief, and strength training, Dr. Ketu Patel 
+                  brings the clinic experience to the comfort of your home.
                 </p>
               </div>
 

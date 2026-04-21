@@ -61,7 +61,9 @@ export default function AreasPage() {
                     📍
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground">{area.name}</h3>
+                    <h3 className="font-bold text-foreground">
+                      {area.name} <span className="text-primary/70 font-medium ml-1">({area.gujaratiName})</span>
+                    </h3>
                     <p className="text-muted text-sm mt-0.5">
                       {area.primary
                         ? "Primary service area — All sectors covered"
@@ -69,16 +71,6 @@ export default function AreasPage() {
                     </p>
                   </div>
                 </div>
-                {area.primary && (
-                  <div className="mt-4 flex items-center gap-2">
-                    <span className="px-3 py-1 rounded-full bg-primary text-white text-xs font-semibold">
-                      Primary Area
-                    </span>
-                    <span className="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-semibold">
-                      All Sectors
-                    </span>
-                  </div>
-                )}
               </div>
             ))}
           </div>
