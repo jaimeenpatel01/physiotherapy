@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MobileStickyBar from "@/components/MobileStickyBar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -132,6 +133,7 @@ export default function RootLayout({
         <MobileStickyBar />
         {/* Bottom padding for mobile sticky bar */}
         <div className="h-[72px] md:hidden" />
+        <SpeedInsights />
       </body>
     </html>
   );
