@@ -168,7 +168,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { value: "1+", label: "Years Experience", icon: "📅" },
+              { value: "2+", label: "Years Experience", icon: "📅" },
               { value: "14+", label: "Techniques", icon: "🔬" },
               { value: "8+", label: "Service Categories", icon: "🏥" },
               { value: "11+", label: "Areas Covered", icon: "📍" },

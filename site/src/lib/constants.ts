@@ -2,7 +2,7 @@ export const SITE_CONFIG = {
   name: "Home Physiotherapy Visits",
   owner: "Dr. Ketu Patel",
   qualification: "BPT (Bachelor of Physiotherapy)",
-  experience: "1+ Year Experience",
+  experience: "2+ Year Experience",
   phone: "7046083586",
   phoneFormatted: "+91 70460 83586",
   email: "drketupatel0209@gmail.com",

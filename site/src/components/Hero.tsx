@@ -111,7 +111,7 @@ export default function Hero() {
             {/* Trust Stats */}
             <div className="flex items-center justify-center lg:justify-start gap-6 md:gap-8 pt-2 md:pt-4">
               {[
-                { value: "1+", label: "Years Exp." },
+                { value: "2+", label: "Years Exp." },
                 { value: "14+", label: "Techniques" },
                 { value: "100%", label: "Home Visits" },
               ].map((stat) => (
