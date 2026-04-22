@@ -10,10 +10,8 @@ import {
   TECHNIQUES,
   TESTIMONIALS,
   FAQS,
-  WHY_CHOOSE_US,
   AREAS,
   PHONE_LINK,
-  WHATSAPP_LINK,
 } from "@/lib/constants";
 import Link from "next/link";
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import SectionHeader from "@/components/SectionHeader";
+import Link from "next/link";
 import CTASection from "@/components/CTASection";
 import { SITE_CONFIG, PHONE_LINK, WHATSAPP_LINK } from "@/lib/constants";
 
@@ -168,21 +168,22 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { value: "2+", label: "Years Experience", icon: "📅" },
-              { value: "14+", label: "Techniques", icon: "🔬" },
-              { value: "8+", label: "Service Categories", icon: "🏥" },
-              { value: "11+", label: "Areas Covered", icon: "📍" },
+              { value: "2+", label: "Years Experience", icon: "📅", href: "/about" },
+              { value: "14+", label: "Techniques", icon: "🔬", href: "/techniques" },
+              { value: "8+", label: "Service Categories", icon: "🏥", href: "/services" },
+              { value: "11+", label: "Areas Covered", icon: "📍", href: "/areas" },
             ].map((stat) => (
-              <div
+              <Link
                 key={stat.label}
-                className="p-6 rounded-2xl bg-white border border-border text-center shadow-sm"
+                href={stat.href}
+                className="p-6 rounded-2xl bg-white border border-border text-center shadow-sm hover:shadow-md hover:border-primary/30 hover:-translate-y-1 transition-all group"
               >
-                <div className="text-3xl mb-2">{stat.icon}</div>
+                <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">{stat.icon}</div>
                 <p className="text-3xl md:text-4xl font-extrabold text-primary">
                   {stat.value}
                 </p>
-                <p className="text-muted text-sm mt-1">{stat.label}</p>
-              </div>
+                <p className="text-muted text-sm mt-1 font-medium group-hover:text-primary transition-colors">{stat.label}</p>
+              </Link>
             ))}
           </div>
         </div>

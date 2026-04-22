@@ -46,7 +46,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2 group" id="navbar-logo">
             <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-shadow bg-white">
               <Image
-                src="/physical-therapy-logo-design-concept-free-vector.jpg"
+                src="/logo.jpg"
                 alt="Logo"
                 fill
                 className="object-cover"
