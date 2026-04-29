@@ -47,6 +47,7 @@ export default function AboutPage() {
                       src="/ketu-image.jpg"
                       alt={SITE_CONFIG.owner}
                       fill
+                      sizes="(max-width: 768px) 288px, 320px"
                       className="object-cover"
                     />
                   </div>

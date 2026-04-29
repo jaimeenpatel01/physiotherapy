@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <div className="relative w-10 h-10 rounded-xl overflow-hidden bg-white">
                 <Image
-                  src="/physical-therapy-logo-design-concept-free-vector.jpg"
+                  src="/logo.jpg"
                   alt="Logo"
                   fill
                   className="object-cover"

@@ -55,6 +55,7 @@ export default function Hero() {
                       src="/ketu-image.jpg"
                       alt="Dr. Ketu Patel - Physiotherapist"
                       fill
+                      sizes="(max-width: 1024px) 256px, 320px"
                       className="object-cover"
                       priority
                     />
@@ -135,6 +136,7 @@ export default function Hero() {
                     src="/ketu-image.jpg"
                     alt="Dr. Ketu Patel - Physiotherapist"
                     fill
+                    sizes="(max-width: 1024px) 256px, 320px"
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     priority
                   />

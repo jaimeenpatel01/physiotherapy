@@ -3,7 +3,8 @@ import SectionHeader from "@/components/SectionHeader";
 import ServiceCard from "@/components/ServiceCard";
 import TechniqueCard from "@/components/TechniqueCard";
 import TestimonialCard from "@/components/TestimonialCard";
-import FAQAccordion from "@/components/FAQAccordion";
+import dynamic from "next/dynamic";
+const FAQAccordion = dynamic(() => import("@/components/FAQAccordion"));
 import CTASection from "@/components/CTASection";
 import {
   SERVICES,

@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import MobileStickyBar from "@/components/MobileStickyBar";
+import dynamic from "next/dynamic";
+const MobileStickyBar = dynamic(() => import("@/components/MobileStickyBar"));
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
@@ -13,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://homephysiotherapyvisits.com"),
+  metadataBase: new URL("https://drketuphysio.in"),
   title: {
     default: "Home Physiotherapy Visits | Dr. Ketu Patel | Gandhinagar",
     template: "%s | Home Physiotherapy Visits - Gandhinagar",
