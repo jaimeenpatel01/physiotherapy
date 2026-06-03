@@ -15,6 +15,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://drketuphysio.in"),
+  icons: {
+    icon: "/logo.jpg",
+    shortcut: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
   title: {
     default: "Home Physiotherapy Visits | Dr. Ketu Patel | Gandhinagar",
     template: "%s | Home Physiotherapy Visits - Gandhinagar",
@@ -76,7 +81,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/logo.jpg" type="image/jpeg" />
         {/* Local Business Schema */}
         <script
           type="application/ld+json"
