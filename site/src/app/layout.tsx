@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
 const MobileStickyBar = dynamic(() => import("@/components/MobileStickyBar"));
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import DevBanner from "@/components/DevBanner.js";
+import DevBanner from "@/components/DevBanner";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://drketuphysio.in";
 const IS_PRODUCTION = process.env.NEXT_PUBLIC_ENV === "production";

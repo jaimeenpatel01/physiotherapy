@@ -6,14 +6,12 @@ export default function DevBanner() {
   if (isProduction) return null;
 
   return (
-    <div className="relative z-[100] bg-amber-500 text-amber-950 text-center text-xs font-semibold py-1.5 px-4">
-      <span className="inline-flex items-center gap-1.5">
-        <span className="relative flex h-2 w-2">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-800 opacity-75" />
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-800" />
-        </span>
-        DEV PREVIEW — This is not the live site
+    <div className="fixed bottom-24 right-4 md:bottom-4 md:right-4 z-[9999] bg-amber-500 text-amber-950 text-xs font-semibold py-2 px-4 rounded-full shadow-lg border border-amber-600 flex items-center gap-2 pointer-events-none">
+      <span className="relative flex h-2 w-2">
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-800 opacity-75" />
+        <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-800" />
       </span>
+      DEV PREVIEW
     </div>
   );
 }
