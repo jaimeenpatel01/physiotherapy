@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 const MobileStickyBar = dynamic(() => import("@/components/MobileStickyBar"));
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import DevBanner from "@/components/DevBanner";
+import Script from "next/script";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://drketuphysio.in";
 const IS_PRODUCTION = process.env.NEXT_PUBLIC_ENV === "production";
@@ -161,6 +162,20 @@ export default function RootLayout({
         {/* Bottom padding for mobile sticky bar */}
         <div className="h-[72px] md:hidden" />
         <SpeedInsights />
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-TMH4614CZS"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TMH4614CZS');
+          `}
+        </Script>
       </body>
     </html>
   );
