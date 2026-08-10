@@ -6,6 +6,10 @@ import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
 const MobileStickyBar = dynamic(() => import("@/components/MobileStickyBar"));
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import DevBanner from "@/components/DevBanner.js";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://drketuphysio.in";
+const IS_PRODUCTION = process.env.NEXT_PUBLIC_ENV === "production";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://drketuphysio.in"),
+  metadataBase: new URL(SITE_URL),
   icons: {
     icon: "/logo.jpg",
     shortcut: "/logo.jpg",
@@ -40,10 +44,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Dr. Ketu Patel" }],
   openGraph: {
-    title: "Home Physiotherapy Visits | Dr. Ketu Patel | Gandhinagar",
+    title: `${!IS_PRODUCTION ? "[DEV] " : ""}Home Physiotherapy Visits | Dr. Ketu Patel | Gandhinagar`,
     description:
       "Professional home physiotherapy visits in Gandhinagar. Expert pain relief, rehabilitation & personalized care at your doorstep.",
-    url: "https://drketuphysio.in",
+    url: SITE_URL,
     siteName: "Home Physiotherapy Visits",
     locale: "en_IN",
     type: "website",
@@ -56,17 +60,22 @@ export const metadata: Metadata = {
       },
     ],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+  robots: IS_PRODUCTION
+    ? {
+        index: true,
+        follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+          "max-video-preview": -1,
+          "max-image-preview": "large",
+          "max-snippet": -1,
+        },
+      }
+    : {
+        index: false,
+        follow: false,
+      },
   verification: {
     google: "u3GthlZTy0vdGLuFiWoGMOJhmHjs1yhUvMleEtK9MwI",
   },
@@ -92,7 +101,7 @@ export default function RootLayout({
               name: "Home Physiotherapy Visits",
               description:
                 "Professional home physiotherapy visits in Gandhinagar by Dr. Ketu Patel (BPT).",
-              url: "https://drketuphysio.in",
+              url: SITE_URL,
               telephone: "+917046083586",
               email: "ketuphysio@gmail.com",
               address: {
@@ -144,6 +153,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col font-sans">
+        <DevBanner />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
