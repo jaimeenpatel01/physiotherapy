@@ -5,9 +5,10 @@ node_modules/
 logs
 *.log
 
-# Environment variables
+# Environment variables (keep .env.development, .env.production, .env.example in git)
 .env
-.env.*
+.env.local
+.env.*.local
 
 # Build folders
 dist/
