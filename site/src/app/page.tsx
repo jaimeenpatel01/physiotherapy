@@ -2,16 +2,16 @@ import Hero from "@/components/Hero";
 import SectionHeader from "@/components/SectionHeader";
 import ServiceCard from "@/components/ServiceCard";
 import TechniqueCard from "@/components/TechniqueCard";
-import TestimonialCard from "@/components/TestimonialCard";
 import dynamic from "next/dynamic";
 const FAQAccordion = dynamic(() => import("@/components/FAQAccordion"));
+const VideoTestimonials = dynamic(() => import("@/components/VideoTestimonials"));
 import CTASection from "@/components/CTASection";
 // 🔌 PLUGIN: Special Offer Banner — remove this import + the <SpecialOfferBanner /> below to disable
 const SpecialOfferBanner = dynamic(() => import("@/components/SpecialOfferBanner"));
 import {
   SERVICES,
   TECHNIQUES,
-  TESTIMONIALS,
+  VIDEO_TESTIMONIALS,
   FAQS,
   AREAS,
   PHONE_LINK,
@@ -28,7 +28,7 @@ export default function HomePage() {
       <SpecialOfferBanner />
 
       {/* Trust Badges */}
-      <section className="py-6 md:py-16 bg-white" id="trust-badges">
+      <section className="py-6 md:py-10 bg-white" id="trust-badges">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl font-extrabold text-foreground">
@@ -71,7 +71,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Overview */}
-      <section className="py-10 md:py-24 bg-section-gradient" id="services-section">
+      <section className="py-10 md:py-12 bg-section-gradient" id="services-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="Our Services"
@@ -79,7 +79,7 @@ export default function HomePage() {
             subtitle="From orthopedic rehabilitation to neurological care — expert treatment delivered to your home."
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            {SERVICES.slice(0, 8).map((service) => (
+            {SERVICES.slice(0, 4).map((service) => (
               <ServiceCard
                 key={service.id}
                 title={service.title}
@@ -103,7 +103,7 @@ export default function HomePage() {
       </section>
 
       {/* Techniques */}
-      <section className="py-10 md:py-24 bg-white" id="techniques-section">
+      <section className="py-10 md:py-12 bg-white" id="techniques-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="Our Techniques"
@@ -111,7 +111,7 @@ export default function HomePage() {
             subtitle="Expert care using the latest physiotherapy techniques for faster recovery."
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            {TECHNIQUES.slice(0, 8).map((technique) => (
+            {TECHNIQUES.slice(0, 4).map((technique) => (
               <TechniqueCard
                 key={technique.id}
                 title={technique.title}
@@ -125,7 +125,7 @@ export default function HomePage() {
               href="/techniques"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary/10 text-primary font-semibold text-sm hover:bg-primary/20 transition-colors"
             >
-              Learn About Techniques
+              View All Techniques
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
@@ -134,31 +134,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-10 md:py-24 bg-white" id="testimonials">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            badge="Testimonials"
-            title="What Our Patients Say"
-            subtitle="Real stories of recovery and improved quality of life from patients who received home care."
-          />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            {TESTIMONIALS.map((testimonial) => (
-              <TestimonialCard
-                key={testimonial.name}
-                name={testimonial.name}
-                location={testimonial.location}
-                gujaratiLocation={testimonial.gujaratiLocation}
-                text={testimonial.text}
-                rating={testimonial.rating}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+
+      {/* Patient Video Stories */}
+      <VideoTestimonials testimonials={VIDEO_TESTIMONIALS} />
 
       {/* Areas Served */}
-      <section className="py-10 md:py-24 bg-section-gradient" id="areas-served">
+      <section className="py-10 md:py-12 bg-section-gradient" id="areas-served">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="Locations"
@@ -183,7 +164,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-8 md:mt-10 p-6 md:p-8 rounded-3xl bg-primary text-white text-center">
-            <h3 className="text-xl font-bold mb-2">Don't see your area?</h3>
+            <h3 className="text-xl font-bold mb-2">Don&apos;t see your area?</h3>
             <p className="text-white/80 mb-6">Contact us to check availability for home visits in your location.</p>
             <a
               href={PHONE_LINK}
@@ -196,7 +177,7 @@ export default function HomePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-10 md:py-24 bg-white" id="faq-section">
+      <section className="py-10 md:py-12 bg-white" id="faq-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="FAQ"

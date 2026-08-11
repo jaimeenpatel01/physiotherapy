@@ -29,49 +29,20 @@ export const NAV_LINKS = [
 ] as const;
 
 export const SERVICES = [
+
   {
-    id: "orthopedic",
-    title: "Orthopedic Conditions",
+    id: "fitness",
+    title: "Fitness & Health",
     description:
-      "Expert treatment for joint pain, fractures, arthritis, frozen shoulder, back pain, and all musculoskeletal disorders.",
-    image: "/services/orthopedic-conditions.jpg",
+      "Personalized fitness programs designed for your health goals, age, and physical condition.",
+    image: "/services/fitness-health.jpg",
     details: [
-      "Joint pain & stiffness",
-      "Fracture rehabilitation",
-      "Arthritis management",
-      "Frozen shoulder",
-      "Back & neck pain",
-      "Knee replacement rehab",
-    ],
-  },
-  {
-    id: "neurological",
-    title: "Neurological Conditions",
-    description:
-      "Specialized care for stroke recovery, paralysis, Parkinson's disease, and nerve-related conditions in your home.",
-    image: "/services/neurological-conditions.jpg",
-    details: [
-      "Stroke rehabilitation",
-      "Paralysis recovery",
-      "Parkinson's therapy",
-      "Nerve injury rehab",
-      "Balance training",
-      "Coordination exercises",
-    ],
-  },
-  {
-    id: "cardiopulmonary",
-    title: "Cardiopulmonary Conditions",
-    description:
-      "Breathing exercises, cardiac rehabilitation, and lung capacity improvement through guided physiotherapy.",
-    image: "/services/cardiopulmonary-conditions.jpg",
-    details: [
-      "Cardiac rehabilitation",
-      "Breathing exercises",
-      "COPD management",
-      "Post-surgery chest physio",
-      "Lung capacity improvement",
-      "Endurance training",
+      "Personalized exercise plans",
+      "Weight management",
+      "Flexibility training",
+      "Core strengthening",
+      "Senior fitness programs",
+      "Functional training",
     ],
   },
   {
@@ -90,6 +61,36 @@ export const SERVICES = [
     ],
   },
   {
+    id: "pregnancy",
+    title: "Pre/Post Pregnancy Exercises",
+    description:
+      "Safe, guided exercises for expecting and new mothers to maintain health and aid recovery.",
+    image: "/services/pre-post-pregnancy-exercises.jpg",
+    details: [
+      "Prenatal exercises",
+      "Postnatal recovery",
+      "Pelvic floor strengthening",
+      "Core restoration",
+      "Back pain relief",
+      "Safe mobility exercises",
+    ],
+  },
+  {
+    id: "orthopedic",
+    title: "Orthopedic Conditions",
+    description:
+      "Expert treatment for joint pain, fractures, arthritis, frozen shoulder, back pain, and all musculoskeletal disorders.",
+    image: "/services/orthopedic-conditions.jpg",
+    details: [
+      "Joint pain & stiffness",
+      "Fracture rehabilitation",
+      "Arthritis management",
+      "Frozen shoulder",
+      "Back & neck pain",
+      "Knee replacement rehab",
+    ],
+  },
+  {
     id: "operative",
     title: "Pre/Post Operative Rehab",
     description:
@@ -105,33 +106,18 @@ export const SERVICES = [
     ],
   },
   {
-    id: "fitness",
-    title: "Fitness & Health",
+    id: "cardiopulmonary",
+    title: "Cardiopulmonary Conditions",
     description:
-      "Personalized fitness programs designed for your health goals, age, and physical condition.",
-    image: "/services/fitness-health.jpg",
+      "Breathing exercises, cardiac rehabilitation, and lung capacity improvement through guided physiotherapy.",
+    image: "/services/cardiopulmonary-conditions.jpg",
     details: [
-      "Personalized exercise plans",
-      "Weight management",
-      "Flexibility training",
-      "Core strengthening",
-      "Senior fitness programs",
-      "Functional training",
-    ],
-  },
-  {
-    id: "pregnancy",
-    title: "Pre/Post Pregnancy Exercises",
-    description:
-      "Safe, guided exercises for expecting and new mothers to maintain health and aid recovery.",
-    image: "/services/pre-post-pregnancy-exercises.jpg",
-    details: [
-      "Prenatal exercises",
-      "Postnatal recovery",
-      "Pelvic floor strengthening",
-      "Core restoration",
-      "Back pain relief",
-      "Safe mobility exercises",
+      "Cardiac rehabilitation",
+      "Breathing exercises",
+      "COPD management",
+      "Post-surgery chest physio",
+      "Lung capacity improvement",
+      "Endurance training",
     ],
   },
   {
@@ -149,15 +135,45 @@ export const SERVICES = [
       "Self-care training",
     ],
   },
+  {
+    id: "neurological",
+    title: "Neurological Conditions",
+    description:
+      "Specialized care for stroke recovery, paralysis, Parkinson's disease, and nerve-related conditions in your home.",
+    image: "/services/neurological-conditions.jpg",
+    details: [
+      "Stroke rehabilitation",
+      "Paralysis recovery",
+      "Parkinson's therapy",
+      "Nerve injury rehab",
+      "Balance training",
+      "Coordination exercises",
+    ],
+  },
 ] as const;
 
 export const TECHNIQUES = [
+
   {
-    id: "manual-therapy",
-    title: "Manual Therapy",
+    id: "taping",
+    title: "Taping",
     description:
-      "Hands-on techniques to mobilize joints and soft tissues, reducing pain and improving movement.",
-    image: "/techniques/manual-therapy.jpg",
+      "Kinesiology and sports taping to support joints, reduce swelling, and aid recovery.",
+    image: "/techniques/taping.jpg",
+  },
+  {
+    id: "cupping",
+    title: "Cupping Therapy",
+    description:
+      "Traditional cupping technique to improve blood flow, reduce muscle tension, and promote healing.",
+    image: "/techniques/cupping.jpg",
+  },
+  {
+    id: "electro-needling",
+    title: "Electro Needling Therapy",
+    description:
+      "Combination of dry needling with electrical stimulation for enhanced pain relief and recovery.",
+    image: "/techniques/electro-needling.jpg",
   },
   {
     id: "dry-needling",
@@ -165,6 +181,13 @@ export const TECHNIQUES = [
     description:
       "Precise needle insertion into trigger points to release muscle tension and alleviate chronic pain.",
     image: "/techniques/dry-needling.jpg",
+  },
+  {
+    id: "manual-therapy",
+    title: "Manual Therapy",
+    description:
+      "Hands-on techniques to mobilize joints and soft tissues, reducing pain and improving movement.",
+    image: "/techniques/manual-therapy.jpg",
   },
   {
     id: "tens",
@@ -195,13 +218,6 @@ export const TECHNIQUES = [
     image: "/techniques/exercise-therapy.jpg",
   },
   {
-    id: "taping",
-    title: "Taping",
-    description:
-      "Kinesiology and sports taping to support joints, reduce swelling, and aid recovery.",
-    image: "/techniques/taping.jpg",
-  },
-  {
     id: "myofascial-release",
     title: "Myofascial Release",
     description:
@@ -214,20 +230,6 @@ export const TECHNIQUES = [
     description:
       "Assessment and correction of postural imbalances to prevent pain and improve alignment.",
     image: "/techniques/posture-correction.jpg",
-  },
-  {
-    id: "cupping",
-    title: "Cupping Therapy",
-    description:
-      "Traditional cupping technique to improve blood flow, reduce muscle tension, and promote healing.",
-    image: "/techniques/cupping.jpg",
-  },
-  {
-    id: "electro-needling",
-    title: "Electro Needling Therapy",
-    description:
-      "Combination of dry needling with electrical stimulation for enhanced pain relief and recovery.",
-    image: "/techniques/electro-needling.jpg",
   },
   {
     id: "iastm",
@@ -266,36 +268,34 @@ export const AREAS = [
   { name: "Sargasan", gujaratiName: "સરગાસણ", primary: false },
 ] as const;
 
-export const TESTIMONIALS = [
+export interface VideoTestimonial {
+  /** Unique identifier for this testimonial */
+  id: string;
+  /** YouTube video ID (from the URL) */
+  youtubeId: string;
+  /** Patient display name */
+  name: string;
+  /** Patient location */
+  location: string;
+  /** Short title or category (e.g. "Knee Recovery") */
+  title: string;
+  /** Optional short description */
+  description?: string;
+  /** Video orientation: "short" = vertical 9:16, "video" = horizontal 16:9 */
+  type: "short" | "video";
+}
+
+export const VIDEO_TESTIMONIALS: VideoTestimonial[] = [
   {
-    name: "Rajesh Sharma",
-    location: "Sector 21, Gandhinagar",
-    gujaratiLocation: "સેક્ટર ૨૧, ગાંધીનગર",
-    text: "Dr. Ketu Patel's home physiotherapy service was a blessing. After my knee surgery, I couldn't travel to a clinic. The personalized treatment plan helped me recover much faster than expected.",
-    rating: 5,
+    id: "testimonial-1",
+    youtubeId: "5ap-23mV46o",
+    name: "Daksh Patel",
+    location: "Pethapur, Gandhinagar",
+    title: "Wrist Pain",
+    description: "Thumb Sprain",
+    type: "short",
   },
-  {
-    name: "Meena Ben Patel",
-    location: "Adalaj",
-    gujaratiLocation: "અડાલજ",
-    text: "My mother had a stroke and needed daily physio. Dr. Ketu Patel's home visits saved us so much trouble. His exercises and care helped her regain movement in just a few weeks.",
-    rating: 5,
-  },
-  {
-    name: "Amit Desai",
-    location: "Kudasan",
-    gujaratiLocation: "કુડાસણ",
-    text: "I was suffering from chronic back pain for months. Dr. Ketu's combination of manual therapy and exercise program gave me relief I hadn't found anywhere else. Highly recommended!",
-    rating: 5,
-  },
-  {
-    name: "Priya Shah",
-    location: "Sargasan",
-    gujaratiLocation: "સરગાસણ",
-    text: "As a working professional, visiting a clinic was impossible. Dr. Ketu Patel's home visits fit perfectly into my schedule. Professional, punctual, and extremely effective treatment.",
-    rating: 5,
-  },
-] as const;
+];
 
 export const FAQS = [
   {
