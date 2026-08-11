@@ -285,17 +285,6 @@ export interface VideoTestimonial {
   type: "short" | "video";
 }
 
-export const VIDEO_TESTIMONIALS: VideoTestimonial[] = [
-  {
-    id: "testimonial-1",
-    youtubeId: "5ap-23mV46o",
-    name: "Daksh Patel",
-    location: "Pethapur, Gandhinagar",
-    title: "Wrist Pain",
-    description: "Thumb Sprain",
-    type: "short",
-  },
-];
 
 export const FAQS = [
   {

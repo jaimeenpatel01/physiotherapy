@@ -11,12 +11,15 @@ const SpecialOfferBanner = dynamic(() => import("@/components/SpecialOfferBanner
 import {
   SERVICES,
   TECHNIQUES,
-  VIDEO_TESTIMONIALS,
   FAQS,
   AREAS,
   PHONE_LINK,
 } from "@/lib/constants";
+import type { VideoTestimonial } from "@/lib/constants";
+import videoTestimonialsData from "@/data/video-testimonials.json";
 import Link from "next/link";
+
+const VIDEO_TESTIMONIALS = videoTestimonialsData as VideoTestimonial[];
 
 export default function HomePage() {
   return (
