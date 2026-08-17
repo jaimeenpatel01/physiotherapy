@@ -6,8 +6,7 @@ import dynamic from "next/dynamic";
 const FAQAccordion = dynamic(() => import("@/components/FAQAccordion"));
 const VideoTestimonials = dynamic(() => import("@/components/VideoTestimonials"));
 import CTASection from "@/components/CTASection";
-// 🔌 PLUGIN: Special Offer Banner — remove this import + the <SpecialOfferBanner /> below to disable
-const SpecialOfferBanner = dynamic(() => import("@/components/SpecialOfferBanner"));
+
 import {
   SERVICES,
   TECHNIQUES,
@@ -27,8 +26,7 @@ export default function HomePage() {
       {/* Hero */}
       <Hero />
 
-      {/* 🔌 PLUGIN: Special Offer Banner — remove this line to disable */}
-      <SpecialOfferBanner />
+
 
       {/* Trust Badges */}
       <section className="py-6 md:py-10 bg-white" id="trust-badges">
